@@ -1,0 +1,105 @@
+{
+  "name": "chatbotMinerva",
+  "nodes": [
+    {
+      "parameters": {
+        "public": true,
+        "initialMessages": "Hola! Mi nombre es MinervaBot",
+        "options": {
+          "inputPlaceholder": "Type your question..",
+          "title": "MINERVA",
+          "responseMode": "responseNodes"
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.chatTrigger",
+      "typeVersion": 1.4,
+      "position": [
+        -176,
+        -16
+      ],
+      "id": "aefec95b-6c7e-4758-8349-de3bfbc4b2f7",
+      "name": "When chat message received",
+      "webhookId": "1015230a-cfdc-4529-a950-3cf45adad075"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://prueba-juan.vercel.app/chatbot",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "usuario",
+              "value": "={{ $json.sessionId }}"
+            },
+            {
+              "name": "mensaje",
+              "value": "={{ $json.chatInput }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [
+        144,
+        -16
+      ],
+      "id": "cdfb8abc-6862-455a-a6ce-62e1a1f9f477",
+      "name": "HTTP Request"
+    },
+    {
+      "parameters": {
+        "message": "={{ $json.respuesta }}",
+        "waitUserReply": false,
+        "options": {
+          "memoryConnection": false
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.chat",
+      "typeVersion": 1,
+      "position": [
+        464,
+        -16
+      ],
+      "id": "57a93d30-7afb-4df1-86c9-c43a44112120",
+      "name": "Respond to Chat"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When chat message received": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request": {
+      "main": [
+        [
+          {
+            "node": "Respond to Chat",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "aa80cbc1-7f32-428c-8606-ad9d706d9f43",
+  "meta": {
+    "instanceId": "ab9f292be967475efbf978bcb0feda4463f4366c8be1498d9542259ffab142cb"
+  },
+  "id": "HcUC2lNmsb3FPqrK",
+  "tags": []
+}
