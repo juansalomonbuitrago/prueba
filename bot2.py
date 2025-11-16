@@ -46,8 +46,7 @@ arbol = {
     "sociosanitario_info": {
         "mensaje": (
             "📘 Aquí tienes el catálogo de formación sociosanitaria:\n"
-            "🔗 https://www.formacionminerva.com/wp-content/uploads/2025/05/"
-            "Catalogo-de-ATENCION-SOCIOSANITARIA-A-PERSONAS-DEPENDIENTES-EN-INSTITUCIONES-SOCIALES-.pdf\n\n"
+            "[Descargar catálogo](https://www.formacionminerva.com/wp-content/uploads/2025/05/Catalogo-de-ATENCION-SOCIOSANITARIA-A-PERSONAS-DEPENDIENTES-EN-INSTITUCIONES-SOCIALES-.pdf)"
             "¿Quieres ver otro área? (sí / no)"
         ),
         "opciones": {
@@ -186,4 +185,5 @@ def chatbot(request: ChatRequest):
     return {
         "estado": siguiente_estado,
         "respuesta": nuevo_nodo["mensaje"]
+
     }
