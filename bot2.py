@@ -68,7 +68,7 @@ arbol = {
     },
      "administrativo_info": {
         "mensaje": (
-            "📘Aquí tienes el catálogo de auxuliar administrativo:\n"
+            "📘Aquí tienes el catálogo de auxiliar administrativo:\n"
             "[Descargar catálogo](https://www.formacionminerva.com/wp-content/uploads/2025/05/Catalogo-de-Auxiliar-administrativo-2.pdf)"
             "¿Quieres ver otro área? (sí / no)"
         ),
@@ -92,7 +92,7 @@ arbol = {
   "enfermeria_info": {
         "mensaje": (
             "📘 Aquí tienes el catálogo  de auxiliar de enfermería:\n"
-            "[Descargar catálogo] (https://www.formacionminerva.com/wp-content/uploads/2025/10/Catalogo-de-Auxiliar-de-enfermeria-y-socio-sanitario-.pdf)"
+            "[Descargar catálogo](https://www.formacionminerva.com/wp-content/uploads/2025/10/Catalogo-de-Auxiliar-de-enfermeria-y-socio-sanitario-.pdf)"
               "¿Quieres ver otro área? (sí / no)"
         ),
         "opciones": {
@@ -184,6 +184,7 @@ def chatbot(request: ChatRequest):
         "respuesta": nuevo_nodo["mensaje"]
 
     }
+
 
 
 
