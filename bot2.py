@@ -66,11 +66,10 @@ arbol = {
             "2": "inicio"
         }
     },
-    "administrativo_info": {
+     "administrativo_info": {
         "mensaje": (
-            "📘Catálogo del área administrativa:\n"
-            "[Descargar catálogo] (https://www.formacionminerva.com/wp-content/uploads/2025/05/Catalogo-de-Auxiliar-administrativo-2.pdf)"
-            "Catalogo-de-Auxiliar-administrativo-2.pdf\n\n"
+            "📘Aquí tienes el catálogo de formación administrativa:\n"
+            "[Descargar catálogo](https://www.formacionminerva.com/wp-content/uploads/2025/05/Catalogo-de-Auxiliar-administrativo-2.pdf)"
             "¿Quieres ver otro área? (sí / no)"
         ),
         "opciones": {
@@ -187,5 +186,6 @@ def chatbot(request: ChatRequest):
         "respuesta": nuevo_nodo["mensaje"]
 
     }
+
 
 
