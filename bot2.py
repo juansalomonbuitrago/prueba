@@ -35,7 +35,7 @@ arbol = {
         "mensaje": (
             "Has elegido el área *Sociosanitaria* 🏥.\n"
             "¿Qué quieres hacer?\n"
-            "1️⃣ Ver catálogo de cursos\n"
+            "1️⃣ Ver catálogo de curso\n"
             "2️⃣ Volver al menú principal"
         ),
         "opciones": {
@@ -68,7 +68,7 @@ arbol = {
     },
      "administrativo_info": {
         "mensaje": (
-            "📘Aquí tienes el catálogo de formación administrativa:\n"
+            "📘Aquí tienes el catálogo de auxuliar administrativo:\n"
             "[Descargar catálogo](https://www.formacionminerva.com/wp-content/uploads/2025/05/Catalogo-de-Auxiliar-administrativo-2.pdf)"
             "¿Quieres ver otro área? (sí / no)"
         ),
@@ -89,12 +89,11 @@ arbol = {
             "2": "inicio"
         }
     },
-    "enfermeria_info": {
+  "enfermeria_info": {
         "mensaje": (
-            "📘 Catálogo del curso de auxiliar de enfermería:\n"
+            "📘 Aquí tienes el catálogo  de auxiliar de enfermería:\n"
             "[Descargar catálogo] (https://www.formacionminerva.com/wp-content/uploads/2025/10/Catalogo-de-Auxiliar-de-enfermeria-y-socio-sanitario-.pdf)"
-            "CATALOGO-NUEVO-CURSO-AUXILIAR-DE-ENFERMERIA-1-1.pdf\n\n"
-            "¿Quieres ver otro área? (sí / no)"
+              "¿Quieres ver otro área? (sí / no)"
         ),
         "opciones": {
             "sí": "inicio",
@@ -115,9 +114,8 @@ arbol = {
     },
     "cajero_info": {
         "mensaje": (
-            "📘 Catálogo del curso de cajero reponedor:\n"
-            "[Descargar catálogo] (https://www.formacionminerva.com/wp-content/uploads/2025/05/Catalogo-de-Cajero-Reponedor-.pdf)"
-            "Catalogo-de-Cajero-Reponedor-.pdf\n\n"
+            "📘  Aquí tienes el catálogo del curso de cajero reponedor:\n"
+            "[Descargar catálogo](https://www.formacionminerva.com/wp-content/uploads/2025/05/Catalogo-de-Cajero-Reponedor-.pdf)"
             "¿Quieres ver otro área? (sí / no)"
         ),
         "opciones": {
@@ -129,7 +127,7 @@ arbol = {
     "general": {
         "mensaje": (
             "Aquí tienes todos nuestros cursos disponibles 🎓:\n"
-            "[Descargar catálogo] (https://www.formacionminerva.com/cursos/)"
+            "[Descargar catálogo](https://www.formacionminerva.com/cursos/)"
             "¿Quieres volver al menú principal? (sí / no)"
         ),
         "opciones": {
@@ -186,6 +184,7 @@ def chatbot(request: ChatRequest):
         "respuesta": nuevo_nodo["mensaje"]
 
     }
+
 
 
 
