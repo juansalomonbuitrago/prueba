@@ -69,7 +69,7 @@ arbol = {
     "administrativo_info": {
         "mensaje": (
             "📘Catálogo del área administrativa:\n"
-            "[Descargar catálogo] (https://www.formacionminerva.com/wp-content/uploads/2025/05/)"
+            "[Descargar catálogo] (https://www.formacionminerva.com/wp-content/uploads/2025/05/Catalogo-de-Auxiliar-administrativo-2.pdf)"
             "Catalogo-de-Auxiliar-administrativo-2.pdf\n\n"
             "¿Quieres ver otro área? (sí / no)"
         ),
@@ -93,7 +93,7 @@ arbol = {
     "enfermeria_info": {
         "mensaje": (
             "📘 Catálogo del curso de auxiliar de enfermería:\n"
-            "[Descargar catálogo] (https://www.formacionminerva.com/wp-content/uploads/2024/12/)"
+            "[Descargar catálogo] (https://www.formacionminerva.com/wp-content/uploads/2025/10/Catalogo-de-Auxiliar-de-enfermeria-y-socio-sanitario-.pdf)"
             "CATALOGO-NUEVO-CURSO-AUXILIAR-DE-ENFERMERIA-1-1.pdf\n\n"
             "¿Quieres ver otro área? (sí / no)"
         ),
@@ -117,7 +117,7 @@ arbol = {
     "cajero_info": {
         "mensaje": (
             "📘 Catálogo del curso de cajero reponedor:\n"
-            "[Descargar catálogo] (https://www.formacionminerva.com/wp-content/uploads/2025/05/)"
+            "[Descargar catálogo] (https://www.formacionminerva.com/wp-content/uploads/2025/05/Catalogo-de-Cajero-Reponedor-.pdf)"
             "Catalogo-de-Cajero-Reponedor-.pdf\n\n"
             "¿Quieres ver otro área? (sí / no)"
         ),
@@ -130,7 +130,7 @@ arbol = {
     "general": {
         "mensaje": (
             "Aquí tienes todos nuestros cursos disponibles 🎓:\n"
-            "[Descargar catálogo] (https://www.formacionminerva.com/cursos/\n\n)"
+            "[Descargar catálogo] (https://www.formacionminerva.com/cursos/)"
             "¿Quieres volver al menú principal? (sí / no)"
         ),
         "opciones": {
@@ -187,4 +187,5 @@ def chatbot(request: ChatRequest):
         "respuesta": nuevo_nodo["mensaje"]
 
     }
+
 
