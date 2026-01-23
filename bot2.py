@@ -52,7 +52,7 @@ arbol = {
     "sociosanitario_info": {
         "mensaje": (
             "📘 Aquí tienes el catálogo de formación sociosanitaria:\n"
-            "[Descargar catálogo](https://www.formacionminerva.com/wp-content/uploads/2025/05/Catalogo-de-ATENCION-SOCIOSANITARIA-A-PERSONAS-DEPENDIENTES-EN-INSTITUCIONES-SOCIALES-.pdf)"
+            "[Descargar catálogo](https://www.formacionminerva.com/wp-content/uploads/2026/01/Brochure-Sociosanitario.pdf)"
             "\n¿Quieres ver otro área? (sí / no)"
         ),
         "opciones": {
